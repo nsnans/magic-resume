@@ -67,7 +67,7 @@
         "selectFolder": "选择文件夹"
       },
       "aiConfig": {
-        "title": "AI 模型配置",
+        "title": "AI 模型",
         "description": "配置豆包大模型，让 AI 助手为你的简历提供智能优化和建议。",
         "apiKey": {
           "label": "豆包 API 密钥",
@@ -78,6 +78,16 @@
           "label": "豆包模型 ID",
           "placeholder": "请输入豆包模型 ID",
           "description": "在豆包开放平台获取模型 ID"
+        },
+        "deepseekApiKey": {
+          "label": "DeepSeek API Key",
+          "placeholder": "输入您的 DeepSeek API Key",
+          "description": "从 DeepSeek 获取 API Key"
+        },
+        "deepseekModelId": {
+          "label": "DeepSeek 模型 ID",
+          "placeholder": "输入 DeepSeek 模型 ID",
+          "description": "选择要使用的 DeepSeek 模型"
         }
       }
     }

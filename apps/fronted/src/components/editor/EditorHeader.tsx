@@ -23,8 +23,11 @@ interface EditorHeaderProps {
 }
 
 export function EditorHeader({ isMobile }: EditorHeaderProps) {
-  const { activeResume, setActiveSection, updateResumeTitle } =
-    useResumeStore();
+  // const { activeResume, updateResumeTitle } =
+  //   useResumeStore();
+
+  const activeResume = useResumeStore((state) => state.activeResume);
+  const updateResumeTitle = useResumeStore((state) => state.updateResumeTitle);
   const { menuSections = [], activeSection } = activeResume || {};
   const themeConfig = getThemeConfig();
   const { errors, selectError } = useGrammarCheck();
